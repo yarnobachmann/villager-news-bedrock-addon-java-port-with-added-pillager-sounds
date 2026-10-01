@@ -283,6 +283,7 @@ public final class DialogueTestCommand {
 		return switch (group.speaker()) {
 			case "wooly" -> EntityTypes.SHEEP.create(level, EntitySpawnReason.COMMAND);
 			case "wandering_trader" -> EntityTypes.WANDERING_TRADER.create(level, EntitySpawnReason.COMMAND);
+			case "pillager" -> EntityTypes.PILLAGER.create(level, EntitySpawnReason.COMMAND);
 			default -> EntityTypes.VILLAGER.create(level, EntitySpawnReason.COMMAND);
 		};
 	}

@@ -26,6 +26,8 @@ public final class VillagerNewsAddonPortClient implements ClientModInitializer {
 		VillagerNewsClientSettings.load();
 		try {
 			DialogueAnimationState.load();
+			registerFloat("vnap_crouch_ticks", PlayerCrouchAnimationState::crouchTicks, "Ticks the local player has held crouch");
+			registerFloat("vnap_player_flying", PlayerCrouchAnimationState::flying, "Whether the local player is flying with creative flight");
 			registerFloat("vnap_speaking", DialogueAnimationState::speaking, "Whether the Villager News character is speaking");
 			registerFloat("vnap_mouth_open", DialogueAnimationState::mouthOpen, "Current Villager News mouth opening");
 			registerFloat("vnap_mouth_width", DialogueAnimationState::mouthWidth, "Current Villager News mouth width");
@@ -67,6 +69,7 @@ public final class VillagerNewsAddonPortClient implements ClientModInitializer {
 			DialogueSoundState.clear(client);
 			DialogueAnimationState.clear();
 			DialogueSubtitleState.clear();
+			PlayerCrouchAnimationState.reset();
 			VillagerNewsSettingsState.reset();
 		});
 		UseItemCallback.EVENT.register((player, level, hand) -> {
@@ -80,6 +83,7 @@ public final class VillagerNewsAddonPortClient implements ClientModInitializer {
 			DialogueSoundState.tick(client);
 			DialogueAnimationState.tick(client);
 			DialogueSubtitleState.tick(client);
+			PlayerCrouchAnimationState.tick(client);
 		});
 		VillagerNewsAddonPort.LOGGER.info("Registered synchronized EMF facial and dialogue animations");
 	}

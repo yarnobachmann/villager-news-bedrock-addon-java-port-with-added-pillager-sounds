@@ -17848,5 +17848,1147 @@
         "name": "villager-news-addon-port:effect/v"
       }
     ]
+  },
+  "dialogue.pillager_001.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_001",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_002.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_002",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_003.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_003",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_004.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_004",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_005.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_005",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_006.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_006",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_007.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_007",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_008.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_008",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_009.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_009",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_010.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_010",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_011.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_011",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_012.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_012",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_013.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_013",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_014.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_014",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_015.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_015",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_016.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_016",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_017.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_017",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_018.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_018",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_019.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_019",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_020.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_020",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_021.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_021",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_022.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_022",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_023.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_023",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_024.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_024",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_025.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_025",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_026.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_026",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_027.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_027",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_028.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_028",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_029.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_029",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_030.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_030",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_031.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_031",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_032.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_032",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_033.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_033",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_034.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_034",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_035.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_035",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_036.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_036",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_037.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_037",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_038.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_038",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_039.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_039",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_040.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_040",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_041.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_041",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_042.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_042",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_043.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_043",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_044.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_044",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_045.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_045",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_046.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_046",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_047.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_047",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_048.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_048",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_049.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_049",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_050.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_050",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_051.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_051",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_052.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_052",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_053.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_053",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_054.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_054",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_055.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_055",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_056.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_056",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_057.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_057",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_058.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_058",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_059.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_059",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_060.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_060",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_061.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_061",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_062.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_062",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_063.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_063",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_064.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_064",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_065.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_065",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_066.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_066",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_067.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_067",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_068.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_068",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_069.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_069",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_070.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_070",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_071.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_071",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_072.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_072",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_073.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_073",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_074.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_074",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_075.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_075",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_076.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_076",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_077.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_077",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_078.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_078",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_079.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_079",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_080.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_080",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_081.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_081",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_082.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_082",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_083.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_083",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_084.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_084",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_085.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_085",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_086.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_086",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_087.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_087",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_088.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_088",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_089.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_089",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_090.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_090",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_091.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_091",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_092.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_092",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_093.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_093",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_094.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_094",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_095.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_095",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_096.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_096",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_097.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_097",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_098.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_098",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_099.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_099",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_100.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_100",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_101.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_101",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_102.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_102",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_103.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_103",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_104.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_104",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_105.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_105",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_106.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_106",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_107.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_107",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_108.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_108",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_109.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_109",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_110.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_110",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_111.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_111",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_112.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_112",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_113.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_113",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_114.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_114",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_115.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_115",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_116.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_116",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_117.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_117",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_118.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_118",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_119.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_119",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_120.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_120",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_121.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:pillager/line_121",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.vex_001.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:vex/line_001",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.vex_002.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:vex/line_002",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.vex_003.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:vex/line_003",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.vex_004.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:vex/line_004",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.vex_005.0": {
+    "attenuation_distance": 24,
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:vex/line_005",
+        "stream": true
+      }
+    ]
+  },
+  "dialogue.pillager_wave_only.0": {
+    "sounds": [
+      {
+        "name": "villager-news-addon-port:silence",
+        "stream": false
+      }
+    ]
   }
 }

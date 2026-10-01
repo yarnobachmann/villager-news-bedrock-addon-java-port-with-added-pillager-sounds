@@ -6,6 +6,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.sounds.EntityBoundSoundInstance;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.client.resources.sounds.SoundInstance;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
@@ -41,7 +42,8 @@ public final class DialogueSoundState {
 		Entity entity = minecraft.level.getEntity(payload.entityId());
 		if (variant == null) return true;
 		if (entity == null) return false;
-		boolean followsEntity = entity.isAlive() && !entity.isSilent()
+		boolean isVex = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).getPath().equals("vex");
+		boolean followsEntity = entity.isAlive() && (!entity.isSilent() || isVex)
 			&& !payload.groupId().equals("hivgme") && !payload.groupId().equals("ecslqo");
 		SoundInstance sound = followsEntity
 			? new EntityBoundSoundInstance(variant.sound(), SoundSource.NEUTRAL, 1.0F, 1.0F, entity, entity.getRandom().nextLong())

@@ -5,6 +5,8 @@ import com.vnap.config.VillagerNewsBuildSettings;
 import com.vnap.config.VillagerNewsSettings;
 import com.vnap.dialogue.ContextualDialogueController;
 import com.vnap.dialogue.DialogueCatalog;
+import com.vnap.dialogue.PillagerDialogueController;
+import com.vnap.dialogue.VexDialogueController;
 import com.vnap.item.VillagerNewsItems;
 import com.vnap.network.DialogueAnimationPayload;
 import com.vnap.network.HurtEffectPayload;
@@ -36,6 +38,8 @@ public class VillagerNewsAddonPort implements ModInitializer {
 		SupplementalSoundCatalog.register();
 		DialogueCatalog.register();
 		ContextualDialogueController.register();
+		PillagerDialogueController.register();
+		VexDialogueController.register();
 		if (VillagerNewsBuildSettings.dialogueTestCommand()) DialogueTestCommand.register();
 		LOGGER.info("Villager News models, textures, and contextual dialogue are ready.");
 	}

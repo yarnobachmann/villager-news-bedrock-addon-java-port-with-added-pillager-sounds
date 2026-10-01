@@ -1,0 +1,2730 @@
+{
+  "groups": {
+    "pillager_001": {
+      "title": "Pillager 01: Player approaches",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Player approaches.",
+      "speaker": "pillager",
+      "maximumDuration": 7.164,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.164,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.001",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_001.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Halt. This is an official patrol. We look very official.ogg",
+      "trigger": "player_approach",
+      "delivery": "Confident"
+    },
+    "pillager_002": {
+      "title": "Pillager 02: Player approaches",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Player approaches.",
+      "speaker": "pillager",
+      "maximumDuration": 4.946,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.946,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.002",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_002.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "You’re walking toward me. Was that in the briefing.ogg",
+      "trigger": "player_approach_nervous",
+      "delivery": "Nervous"
+    },
+    "pillager_003": {
+      "title": "Pillager 03: Player watches the pillager",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Player watches the pillager.",
+      "speaker": "pillager",
+      "maximumDuration": 2.947,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 2.947,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.003",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_003.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "You can stop observing the patrol now.ogg",
+      "trigger": "player_stares",
+      "delivery": "Confident"
+    },
+    "pillager_004": {
+      "title": "Pillager 04: Nearby player wears armor",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Nearby player wears armor.",
+      "speaker": "pillager",
+      "maximumDuration": 7.889,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.889,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.004",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_004.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That is a lot of armor for someone who says hello.ogg",
+      "trigger": "player_armored",
+      "delivery": "Nervous"
+    },
+    "pillager_005": {
+      "title": "Pillager 05: Nearby player holds a weapon",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Nearby player holds a weapon.",
+      "speaker": "pillager",
+      "maximumDuration": 4.829,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.829,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.005",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_005.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Excellent weapon. Please keep it pointed somewhere else.ogg",
+      "trigger": "player_weapon",
+      "delivery": "Confident"
+    },
+    "pillager_006": {
+      "title": "Pillager 06: Nearby player holds an unfamiliar item",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Nearby player holds an unfamiliar item.",
+      "speaker": "pillager",
+      "maximumDuration": 6.34,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.34,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.006",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_006.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I don’t know what that is, and I’d like to keep it that way.ogg",
+      "trigger": "player_ominous_item",
+      "delivery": "Nervous"
+    },
+    "pillager_007": {
+      "title": "Pillager 07: Player leaves the patrol",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Player leaves the patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 5.28,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.28,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.007",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_007.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Good. The patrol has successfully moved you along.ogg",
+      "trigger": "player_leaves",
+      "delivery": "Confident"
+    },
+    "pillager_008": {
+      "title": "Pillager 08: Player returns shortly after leaving",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Player returns shortly after leaving.",
+      "speaker": "pillager",
+      "maximumDuration": 5.416,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.416,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.008",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_008.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "You came back. I was hoping that was a different person.ogg",
+      "trigger": "player_returns",
+      "delivery": "Nervous"
+    },
+    "pillager_009": {
+      "title": "Pillager 09: Pillager spots a villager",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager spots a villager.",
+      "speaker": "pillager",
+      "maximumDuration": 6.234,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.234,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.009",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_009.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Villager spotted. They appear to have no idea what’s going on.ogg",
+      "trigger": "villager_spotted",
+      "delivery": "Confident"
+    },
+    "pillager_010": {
+      "title": "Pillager 10: Villager watches the pillager",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Villager watches the pillager.",
+      "speaker": "pillager",
+      "maximumDuration": 2.57,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 2.57,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.010",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_010.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Why is it looking at me like that.ogg",
+      "trigger": "villager_stares",
+      "delivery": "Nervous"
+    },
+    "pillager_011": {
+      "title": "Pillager 11: Villager walks nearby",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Villager walks nearby.",
+      "speaker": "pillager",
+      "maximumDuration": 5.758,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.758,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.011",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_011.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Keep moving, citizen. This is a very important patrol.ogg",
+      "trigger": "villager_nearby",
+      "delivery": "Confident"
+    },
+    "pillager_012": {
+      "title": "Pillager 12: Villager stands close",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Villager stands close.",
+      "speaker": "pillager",
+      "maximumDuration": 6,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.012",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_012.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That nose is closer than it looked from over there.ogg",
+      "trigger": "villager_nose",
+      "delivery": "Nervous"
+    },
+    "pillager_013": {
+      "title": "Pillager 13: Pillager sees several villagers",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager sees several villagers.",
+      "speaker": "pillager",
+      "maximumDuration": 4.448,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.448,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.013",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_013.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "A crowd. Stay calm and look like we planned this.ogg",
+      "trigger": "villager_crowd",
+      "delivery": "Confident"
+    },
+    "pillager_014": {
+      "title": "Pillager 14: Villagers gather nearby",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Villagers gather nearby.",
+      "speaker": "pillager",
+      "maximumDuration": 6.359,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.359,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.014",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_014.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "They’re talking about us. I can tell because they have noses.ogg",
+      "trigger": "villagers_gossip",
+      "delivery": "Nervous"
+    },
+    "pillager_015": {
+      "title": "Pillager 15: Villager runs away",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Villager runs away.",
+      "speaker": "pillager",
+      "maximumDuration": 4.495,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.495,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.015",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_015.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The citizen has chosen the fast exit.ogg",
+      "trigger": "villager_runs",
+      "delivery": "Confident"
+    },
+    "pillager_016": {
+      "title": "Pillager 16: Villager approaches",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Villager approaches.",
+      "speaker": "pillager",
+      "maximumDuration": 6.618,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.618,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.016",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_016.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I don’t know what it wants. It has no visible pockets.ogg",
+      "trigger": "villager_pockets",
+      "delivery": "Nervous"
+    },
+    "pillager_017": {
+      "title": "Pillager 17: Pillager spots an iron golem",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager spots an iron golem.",
+      "speaker": "pillager",
+      "maximumDuration": 4.366,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.366,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.017",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_017.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "There’s the village security department.ogg",
+      "trigger": "golem_spotted",
+      "delivery": "Confident"
+    },
+    "pillager_018": {
+      "title": "Pillager 18: Iron golem looks toward the pillager",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Iron golem looks toward the pillager.",
+      "speaker": "pillager",
+      "maximumDuration": 5.538,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.538,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.018",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_018.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "It has noticed us. Everybody act like a flower.ogg",
+      "trigger": "golem_notices",
+      "delivery": "Nervous"
+    },
+    "pillager_019": {
+      "title": "Pillager 19: Iron golem is close",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Iron golem is close.",
+      "speaker": "pillager",
+      "maximumDuration": 7.085,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.085,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.019",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_019.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "We’re just passing through. Very slowly. In the other direction.ogg",
+      "trigger": "golem_nearby",
+      "delivery": "Confident"
+    },
+    "pillager_020": {
+      "title": "Pillager 20: Iron golem approaches",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Iron golem approaches.",
+      "speaker": "pillager",
+      "maximumDuration": 4.517,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.517,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.020",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_020.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That one has arms like a whole patrol.ogg",
+      "trigger": "golem_approaches",
+      "delivery": "Nervous"
+    },
+    "pillager_021": {
+      "title": "Pillager 21: Iron golem walks away",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Iron golem walks away.",
+      "speaker": "pillager",
+      "maximumDuration": 5.44,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.44,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.021",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_021.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The situation is under control. It left first.ogg",
+      "trigger": "golem_leaves",
+      "delivery": "Confident"
+    },
+    "pillager_022": {
+      "title": "Pillager 22: Iron golem stands near villagers",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Iron golem stands near villagers.",
+      "speaker": "pillager",
+      "maximumDuration": 6.642,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.642,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.022",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_022.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "It’s guarding them. That seems excessive and sensible.ogg",
+      "trigger": "golem_guards_villagers",
+      "delivery": "Nervous"
+    },
+    "pillager_023": {
+      "title": "Pillager 23: Pillager sees a damaged iron golem",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager sees a damaged iron golem.",
+      "speaker": "pillager",
+      "maximumDuration": 4.129,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.129,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.023",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_023.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The village security department has seen better days.ogg",
+      "trigger": "golem_damaged",
+      "delivery": "Confident"
+    },
+    "pillager_024": {
+      "title": "Pillager 24: Pillager plans a patrol route near a golem",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Pillager plans a patrol route near a golem.",
+      "speaker": "pillager",
+      "maximumDuration": 7.112,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.112,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.024",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_024.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I’m adding this route to the map under ‘absolutely not.ogg",
+      "trigger": "golem_patrol_route",
+      "delivery": "Nervous"
+    },
+    "pillager_025": {
+      "title": "Pillager 25: Pillager meets another pillager",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager meets another pillager.",
+      "speaker": "pillager",
+      "maximumDuration": 6.087,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.087,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.025",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_025.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Good, backup. Now we can be outnumbered together.ogg",
+      "trigger": "pillager_backup",
+      "delivery": "Confident"
+    },
+    "pillager_026": {
+      "title": "Pillager 26: Another pillager joins the patrol",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Another pillager joins the patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 7.621,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.621,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.026",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_026.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "You’re late. I’ve been nervous by myself for ages.ogg",
+      "trigger": "pillager_late",
+      "delivery": "Nervous"
+    },
+    "pillager_027": {
+      "title": "Pillager 27: Pillagers walk together",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillagers walk together.",
+      "speaker": "pillager",
+      "maximumDuration": 7.043,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.043,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.027",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_027.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "We are moving in formation. The formation is accidental.ogg",
+      "trigger": "pillager_formation",
+      "delivery": "Confident"
+    },
+    "pillager_028": {
+      "title": "Pillager 28: Pillager loses sight of its group",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Pillager loses sight of its group.",
+      "speaker": "pillager",
+      "maximumDuration": 5.316,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.316,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.028",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_028.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I know where they went. I just don’t know where I am.ogg",
+      "trigger": "pillager_lost",
+      "delivery": "Nervous"
+    },
+    "pillager_029": {
+      "title": "Pillager 29: Pillager sees a raid party",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager sees a raid party.",
+      "speaker": "pillager",
+      "maximumDuration": 6.659,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.659,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.029",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_029.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Everyone look prepared. We’ll start with the ones who are.ogg",
+      "trigger": "raid_party",
+      "delivery": "Confident"
+    },
+    "pillager_030": {
+      "title": "Pillager 30: Raid horn sounds nearby",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Raid horn sounds nearby.",
+      "speaker": "pillager",
+      "maximumDuration": 4.829,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.829,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.030",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_030.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That horn means something. I hope it means lunch.ogg",
+      "trigger": "raid_horn",
+      "delivery": "Nervous"
+    },
+    "pillager_031": {
+      "title": "Pillager 31: Pillager approaches a village during a raid",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager approaches a village during a raid.",
+      "speaker": "pillager",
+      "maximumDuration": 5.47,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.47,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.031",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_031.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The village is ahead. Let’s all remember the plan.ogg",
+      "trigger": "raid_village",
+      "delivery": "Confident"
+    },
+    "pillager_032": {
+      "title": "Pillager 32: Raid is underway",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Raid is underway.",
+      "speaker": "pillager",
+      "maximumDuration": 6.081,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.081,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.032",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_032.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The plan has changed. I was not told the new plan.ogg",
+      "trigger": "raid_plan",
+      "delivery": "Nervous"
+    },
+    "pillager_033": {
+      "title": "Pillager 33: Pillager takes damage",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Pillager takes damage.",
+      "speaker": "pillager",
+      "maximumDuration": 6,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.033",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_033.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I’m fine. That was my armor complaining.ogg",
+      "trigger": "hurt_armor",
+      "delivery": "Nervous"
+    },
+    "pillager_034": {
+      "title": "Pillager 34: Pillager takes damage",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager takes damage.",
+      "speaker": "pillager",
+      "maximumDuration": 4.656,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.656,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.034",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_034.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "A minor setback. My confidence is still intact.ogg",
+      "trigger": "hurt_confident",
+      "delivery": "Confident"
+    },
+    "pillager_035": {
+      "title": "Pillager 35: Player attacks the pillager",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Player attacks the pillager.",
+      "speaker": "pillager",
+      "maximumDuration": 3.117,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 3.117,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.035",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_035.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That is not how you greet a patrol.ogg",
+      "trigger": "player_attacks",
+      "delivery": "Nervous"
+    },
+    "pillager_036": {
+      "title": "Pillager 36: Pillager aims its crossbow",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager aims its crossbow.",
+      "speaker": "pillager",
+      "maximumDuration": 5.798,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.798,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.036",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_036.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Stand still while I make a very careful decision.ogg",
+      "trigger": "aims_crossbow",
+      "delivery": "Confident"
+    },
+    "pillager_037": {
+      "title": "Pillager 37: Pillager misses a shot",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Pillager misses a shot.",
+      "speaker": "pillager",
+      "maximumDuration": 5.004,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.004,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.037",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_037.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That shot was a warning. To the wall.ogg",
+      "trigger": "missed_shot",
+      "delivery": "Nervous"
+    },
+    "pillager_038": {
+      "title": "Pillager 38: Pillager reloads its crossbow",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Pillager reloads its crossbow.",
+      "speaker": "pillager",
+      "maximumDuration": 4.401,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.401,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.038",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_038.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Reloading. Please remain impressed.ogg",
+      "trigger": "reloads_crossbow",
+      "delivery": "Confident"
+    },
+    "pillager_039": {
+      "title": "Pillager 39: Pillager sees a nearby fight",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Pillager sees a nearby fight.",
+      "speaker": "pillager",
+      "maximumDuration": 1.343,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 1.343,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.039",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_039.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I’m going to help. From a safe distance.ogg",
+      "trigger": "nearby_fight",
+      "delivery": "Nervous"
+    },
+    "pillager_040": {
+      "title": "Pillager 40: A nearby fight ends",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: A nearby fight ends.",
+      "speaker": "pillager",
+      "maximumDuration": 4.055,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.055,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.040",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_040.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The area is secure. I had very little to do with it.ogg",
+      "trigger": "fight_ends",
+      "delivery": "Confident"
+    },
+    "pillager_041": {
+      "title": "Pillager 41: Rare ambient comment",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Rare ambient comment.",
+      "speaker": "pillager",
+      "maximumDuration": 3.859,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 3.859,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.041",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_041.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Patrol report still patrolling.ogg",
+      "trigger": "ambient_patrol",
+      "delivery": "Confident"
+    },
+    "pillager_042": {
+      "title": "Pillager 42: Rare ambient comment",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Rare ambient comment.",
+      "speaker": "pillager",
+      "maximumDuration": 4.203,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.203,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.042",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_042.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I was told there would be a route.ogg",
+      "trigger": "ambient_route",
+      "delivery": "Nervous"
+    },
+    "pillager_043": {
+      "title": "Pillager 43: Rare ambient comment",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Rare ambient comment.",
+      "speaker": "pillager",
+      "maximumDuration": 4.84,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.84,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.043",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_043.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "This crossbow is heavier when nobody’s watching.ogg",
+      "trigger": "ambient_crossbow",
+      "delivery": "Confident"
+    },
+    "pillager_044": {
+      "title": "Pillager 44: Rare ambient comment",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Rare ambient comment.",
+      "speaker": "pillager",
+      "maximumDuration": 4.799,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.799,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.044",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_044.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "If anyone asks, I was standing guard.ogg",
+      "trigger": "ambient_guard",
+      "delivery": "Nervous"
+    },
+    "pillager_045": {
+      "title": "Pillager 45: Rare ambient comment while wandering",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Rare ambient comment while wandering.",
+      "speaker": "pillager",
+      "maximumDuration": 5.446,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.446,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.045",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_045.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "“I know where I’m going. The map is simply mistaken.ogg",
+      "trigger": "ambient_map",
+      "delivery": "Confident"
+    },
+    "pillager_046": {
+      "title": "Pillager 46: Rare ambient comment near a village",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Rare ambient comment near a village.",
+      "speaker": "pillager",
+      "maximumDuration": 5.214,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.214,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.046",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_046.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "“It’s quiet here. Quiet usually means something.ogg",
+      "trigger": "ambient_quiet",
+      "delivery": "Nervous"
+    },
+    "pillager_047": {
+      "title": "Pillager 47: Rare ambient comment near a bell",
+      "body": "Pillager reaction. Delivery: Confident. Trigger: Rare ambient comment near a bell.",
+      "speaker": "pillager",
+      "maximumDuration": 5.524,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.524,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.047",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_047.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That bell is far too good at getting everyone’s attention.”.ogg",
+      "trigger": "ambient_bell",
+      "delivery": "Confident"
+    },
+    "pillager_048": {
+      "title": "Pillager 48: Rare ambient comment while idle",
+      "body": "Pillager reaction. Delivery: Nervous. Trigger: Rare ambient comment while idle.",
+      "speaker": "pillager",
+      "maximumDuration": 5.605,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.605,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.048",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_048.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I’m not lost. I’m checking the surroundings from this spot.”.ogg",
+      "trigger": "ambient_not_lost",
+      "delivery": "Nervous"
+    },
+    "pillager_wave_only": {
+      "title": "Pillager reaction: wave",
+      "body": "Silent group wave animation.",
+      "speaker": "pillager",
+      "maximumDuration": 9,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 9,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.wave",
+          "subtitles": []
+        }
+      ],
+      "pool": "wave_only"
+    },
+    "pillager_049": {
+      "title": "Pillager 049: player gear",
+      "body": "Pillager dialogue. Event pool: player_gear.",
+      "speaker": "pillager",
+      "maximumDuration": 5.556,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.556,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.049",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_049.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "A bow This patrol has competition.ogg",
+      "pool": "player_gear"
+    },
+    "pillager_050": {
+      "title": "Pillager 050: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 6.341,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.341,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.050",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_050.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "A map Excellent. Could you show us where we are.ogg",
+      "pool": "patrol"
+    },
+    "pillager_051": {
+      "title": "Pillager 051: player sighting",
+      "body": "Pillager dialogue. Event pool: player_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 7.219,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.219,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.051",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_051.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "A player Act natural. No, not that natural.ogg",
+      "pool": "player_sighting"
+    },
+    "pillager_052": {
+      "title": "Pillager 052: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 7.256,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.256,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.052",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_052.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "All quiet. Nothing suspicious except our entire group.ogg",
+      "pool": "patrol"
+    },
+    "pillager_053": {
+      "title": "Pillager 053: player sighting",
+      "body": "Pillager dialogue. Event pool: player_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 6.085,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.085,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.053",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_053.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Are you planning to mine us out of trouble.ogg",
+      "pool": "player_sighting"
+    },
+    "pillager_054": {
+      "title": "Pillager 054: player stare",
+      "body": "Pillager dialogue. Event pool: player_stare.",
+      "speaker": "pillager",
+      "maximumDuration": 4.184,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.184,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.054",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_054.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "At least pretend you came here for the scenery.ogg",
+      "pool": "player_stare"
+    },
+    "pillager_055": {
+      "title": "Pillager 055: shot hit",
+      "body": "Pillager dialogue. Event pool: shot_hit.",
+      "speaker": "pillager",
+      "maximumDuration": 5.124,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.124,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.055",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_055.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Bullseye Everyone saw that, right.ogg",
+      "pool": "shot_hit"
+    },
+    "pillager_056": {
+      "title": "Pillager 056: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 5.633,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.633,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.056",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_056.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Can one of you look menacing Just one.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_057": {
+      "title": "Pillager 057: player sighting",
+      "body": "Pillager dialogue. Event pool: player_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 4.834,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.834,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.057",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_057.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Can you smell that It smells like a player.ogg",
+      "pool": "player_sighting"
+    },
+    "pillager_058": {
+      "title": "Pillager 058: player sighting",
+      "body": "Pillager dialogue. Event pool: player_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 5.594,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.594,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.058",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_058.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Did you come by boat, or is that just for dramatic effect.ogg",
+      "pool": "player_sighting"
+    },
+    "pillager_059": {
+      "title": "Pillager 059: shot hit",
+      "body": "Pillager dialogue. Event pool: shot_hit.",
+      "speaker": "pillager",
+      "maximumDuration": 5.521,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.521,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.059",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_059.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Direct hit That was definitely on purpose.ogg",
+      "pool": "shot_hit"
+    },
+    "pillager_060": {
+      "title": "Pillager 060: villager flee",
+      "body": "Pillager dialogue. Event pool: villager_flee.",
+      "speaker": "pillager",
+      "maximumDuration": 6.04,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.04,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.060",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_060.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Don’t let them escape! Or do. I haven’t checked the plan.ogg",
+      "pool": "villager_flee"
+    },
+    "pillager_061": {
+      "title": "Pillager 061: shot hit",
+      "body": "Pillager dialogue. Event pool: shot_hit.",
+      "speaker": "pillager",
+      "maximumDuration": 4.838,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.838,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.061",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_061.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Excellent shot. Did anyone see where it landed.ogg",
+      "pool": "shot_hit"
+    },
+    "pillager_062": {
+      "title": "Pillager 062: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 4.441,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.441,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.062",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_062.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Great. Now the whole patrol looks friendly.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_063": {
+      "title": "Pillager 063: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 4.787,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.787,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.063",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_063.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "He’s waving at the player. We’ve lost him.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_064": {
+      "title": "Pillager 064: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 7.853,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.853,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.064",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_064.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I can keep up. My legs have filed a complaint, but I can keep up.ogg",
+      "pool": "patrol"
+    },
+    "pillager_065": {
+      "title": "Pillager 065: player sighting",
+      "body": "Pillager dialogue. Event pool: player_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 8,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 8,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.065",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_065.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I don’t think that’s a villager. It has a suspicious number of elbows.ogg",
+      "pool": "player_sighting"
+    },
+    "pillager_066": {
+      "title": "Pillager 066: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 5.187,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.187,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.066",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_066.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I know where we are. The map might disagree.ogg",
+      "pool": "patrol"
+    },
+    "pillager_067": {
+      "title": "Pillager 067: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 7.405,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.405,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.067",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_067.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I need backup. Or a moment. A very short moment.ogg",
+      "pool": "patrol"
+    },
+    "pillager_068": {
+      "title": "Pillager 068: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 6.081,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.081,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.068",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_068.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I said stop waving! Why are you waving harder.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_069": {
+      "title": "Pillager 069: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 2.412,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 2.412,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.069",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_069.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I think it can see us. Stop waving.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_070": {
+      "title": "Pillager 070: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 6.602,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.602,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.070",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_070.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I think the patrol is following me. That’s probably how patrols work.ogg",
+      "pool": "patrol"
+    },
+    "pillager_071": {
+      "title": "Pillager 071: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 6.455,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.455,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.071",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_071.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I told them to stop waving. They heard ‘wave with confidence.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_072": {
+      "title": "Pillager 072: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 3.48,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 3.48,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.072",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_072.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I was told there would be a route.ogg",
+      "pool": "patrol"
+    },
+    "pillager_073": {
+      "title": "Pillager 073: pillager hurt",
+      "body": "Pillager dialogue. Event pool: pillager_hurt.",
+      "speaker": "pillager",
+      "maximumDuration": 5.65,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.65,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.073",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_073.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I’ve been hit! Alert someone who looks important.ogg",
+      "pool": "pillager_hurt"
+    },
+    "pillager_074": {
+      "title": "Pillager 074: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 5.896,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.896,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.074",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_074.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "If anyone asks, we were guarding this exact bush.ogg",
+      "pool": "patrol"
+    },
+    "pillager_075": {
+      "title": "Pillager 075: raid",
+      "body": "Pillager dialogue. Event pool: raid.",
+      "speaker": "pillager",
+      "maximumDuration": 5.304,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.304,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.075",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_075.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "If the plan changes again, please tell me this time.ogg",
+      "pool": "raid"
+    },
+    "pillager_076": {
+      "title": "Pillager 076: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 5.325,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.325,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.076",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_076.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "If you’re waiting for the patrol to move, so are we.ogg",
+      "pool": "patrol"
+    },
+    "pillager_077": {
+      "title": "Pillager 077: golem",
+      "body": "Pillager dialogue. Event pool: golem.",
+      "speaker": "pillager",
+      "maximumDuration": 7.512,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.512,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.077",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_077.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Iron golem ahead. Everyone remember the emergency plan.ogg",
+      "pool": "golem"
+    },
+    "pillager_078": {
+      "title": "Pillager 078: player gear",
+      "body": "Pillager dialogue. Event pool: player_gear.",
+      "speaker": "pillager",
+      "maximumDuration": 5.61,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.61,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.078",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_078.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Is that a sword, or are you just happy to see me.ogg",
+      "pool": "player_gear"
+    },
+    "pillager_079": {
+      "title": "Pillager 079: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 5.315,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.315,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.079",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_079.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "It’s quiet out here. I distrust the quiet.ogg",
+      "pool": "patrol"
+    },
+    "pillager_080": {
+      "title": "Pillager 080: player sighting",
+      "body": "Pillager dialogue. Event pool: player_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 5,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.080",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_080.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "It’s wearing a pumpkin. Maybe it can’t see us either.ogg",
+      "pool": "player_sighting"
+    },
+    "pillager_081": {
+      "title": "Pillager 081: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 7.226,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.226,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.081",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_081.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Keep moving, citizen. This is a very official chase.ogg",
+      "pool": "patrol"
+    },
+    "pillager_082": {
+      "title": "Pillager 082: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 4.808,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.808,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.082",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_082.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Look busy. People trust a busy patrol.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_083": {
+      "title": "Pillager 083: player gear",
+      "body": "Pillager dialogue. Event pool: player_gear.",
+      "speaker": "pillager",
+      "maximumDuration": 6.528,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.528,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.083",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_083.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Nice shield. Would you mind holding that between us.ogg",
+      "pool": "player_gear"
+    },
+    "pillager_084": {
+      "title": "Pillager 084: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 7.756,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.756,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.084",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_084.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Nobody wave. Nobody wave. Why is everyone waving.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_085": {
+      "title": "Pillager 085: villager hit",
+      "body": "Pillager dialogue. Event pool: villager_hit.",
+      "speaker": "pillager",
+      "maximumDuration": 7.593,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.593,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.085",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_085.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "One arrow, one villager. That seems like good arrow management.ogg",
+      "pool": "villager_hit"
+    },
+    "pillager_086": {
+      "title": "Pillager 086: player gear",
+      "body": "Pillager dialogue. Event pool: player_gear.",
+      "speaker": "pillager",
+      "maximumDuration": 5.784,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.784,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.086",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_086.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Ooh, is that one of your hoes Hehehe.ogg",
+      "pool": "player_gear"
+    },
+    "pillager_087": {
+      "title": "Pillager 087: pillager hurt",
+      "body": "Pillager dialogue. Event pool: pillager_hurt.",
+      "speaker": "pillager",
+      "maximumDuration": 5.238,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.238,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.087",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_087.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Ouchie! That wasn’t in the briefing.ogg",
+      "pool": "pillager_hurt"
+    },
+    "pillager_088": {
+      "title": "Pillager 088: golem",
+      "body": "Pillager dialogue. Event pool: golem.",
+      "speaker": "pillager",
+      "maximumDuration": 4.565,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.565,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.088",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_088.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Our emergency plan is to leave, isn’t it.ogg",
+      "pool": "golem"
+    },
+    "pillager_089": {
+      "title": "Pillager 089: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 7.105,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.105,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.089",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_089.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Patrol report we’re still walking in approximately the right direction.ogg",
+      "pool": "patrol"
+    },
+    "pillager_090": {
+      "title": "Pillager 090: patrol",
+      "body": "Pillager dialogue. Event pool: patrol.",
+      "speaker": "pillager",
+      "maximumDuration": 7.072,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.072,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.090",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_090.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Quick, look dangerous. We have company.ogg",
+      "pool": "patrol"
+    },
+    "pillager_091": {
+      "title": "Pillager 091: villager flee",
+      "body": "Pillager dialogue. Event pool: villager_flee.",
+      "speaker": "pillager",
+      "maximumDuration": 6.395,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.395,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.091",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_091.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Run, villager! It makes our patrol look important.ogg",
+      "pool": "villager_flee"
+    },
+    "pillager_092": {
+      "title": "Pillager 092: ambient",
+      "body": "Pillager dialogue. Event pool: ambient.",
+      "speaker": "pillager",
+      "maximumDuration": 5.539,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.539,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.092",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_092.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Stay calm. Maybe it thinks we’re the guards.ogg",
+      "pool": "ambient"
+    },
+    "pillager_093": {
+      "title": "Pillager 093: shot hit",
+      "body": "Pillager dialogue. Event pool: shot_hit.",
+      "speaker": "pillager",
+      "maximumDuration": 4.104,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.104,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.093",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_093.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Target hit! Write that down before I forget.ogg",
+      "pool": "shot_hit"
+    },
+    "pillager_094": {
+      "title": "Pillager 094: player gear",
+      "body": "Pillager dialogue. Event pool: player_gear.",
+      "speaker": "pillager",
+      "maximumDuration": 6.674,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.674,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.094",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_094.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That armour looks expensive. Do you still have the receipt.ogg",
+      "pool": "player_gear"
+    },
+    "pillager_095": {
+      "title": "Pillager 095: villager sighting",
+      "body": "Pillager dialogue. Event pool: villager_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 6.784,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.784,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.095",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_095.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That one looks like it knows how to use a crafting table.ogg",
+      "pool": "villager_sighting"
+    },
+    "pillager_096": {
+      "title": "Pillager 096: player stare",
+      "body": "Pillager dialogue. Event pool: player_stare.",
+      "speaker": "pillager",
+      "maximumDuration": 6.882,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.882,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.096",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_096.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That one’s been watching us for ages. Should we charge rent.ogg",
+      "pool": "player_stare"
+    },
+    "pillager_097": {
+      "title": "Pillager 097: villager sighting",
+      "body": "Pillager dialogue. Event pool: villager_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 6.75,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.75,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.097",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_097.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That villager is much too tall. And it has a name floating over its head.ogg",
+      "pool": "villager_sighting"
+    },
+    "pillager_098": {
+      "title": "Pillager 098: group gag",
+      "body": "Pillager dialogue. Event pool: group_gag.",
+      "speaker": "pillager",
+      "maximumDuration": 6.112,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.112,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.098",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_098.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "That was not the signal. The signal was to look threatening.ogg",
+      "pool": "group_gag"
+    },
+    "pillager_099": {
+      "title": "Pillager 099: villager hit",
+      "body": "Pillager dialogue. Event pool: villager_hit.",
+      "speaker": "pillager",
+      "maximumDuration": 6.599,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.599,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.099",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_099.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The arrow worked. All that practice finally paid off.ogg",
+      "pool": "villager_hit"
+    },
+    "pillager_100": {
+      "title": "Pillager 100: golem",
+      "body": "Pillager dialogue. Event pool: golem.",
+      "speaker": "pillager",
+      "maximumDuration": 7,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.100",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_100.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The golem is blocking the path. Ask it politely. From over there.ogg",
+      "pool": "golem"
+    },
+    "pillager_101": {
+      "title": "Pillager 101: raid",
+      "body": "Pillager dialogue. Event pool: raid.",
+      "speaker": "pillager",
+      "maximumDuration": 5.72,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.72,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.101",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_101.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The horn sounded. I hope that means reinforcements.ogg",
+      "pool": "raid"
+    },
+    "pillager_102": {
+      "title": "Pillager 102: pillager hurt",
+      "body": "Pillager dialogue. Event pool: pillager_hurt.",
+      "speaker": "pillager",
+      "maximumDuration": 6.987,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.987,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.102",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_102.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The player attacked me! Everybody remain professionally alarmed.ogg",
+      "pool": "pillager_hurt"
+    },
+    "pillager_103": {
+      "title": "Pillager 103: player food",
+      "body": "Pillager dialogue. Event pool: player_food.",
+      "speaker": "pillager",
+      "maximumDuration": 7.191,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.191,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.103",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_103.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The player’s holding food. Keep formation. Nobody ask for a bite.ogg",
+      "pool": "player_food"
+    },
+    "pillager_104": {
+      "title": "Pillager 104: raid",
+      "body": "Pillager dialogue. Event pool: raid.",
+      "speaker": "pillager",
+      "maximumDuration": 6.626,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.626,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.104",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_104.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The raid is underway. Has anyone seen the captain.ogg",
+      "pool": "raid"
+    },
+    "pillager_105": {
+      "title": "Pillager 105: villager flee",
+      "body": "Pillager dialogue. Event pool: villager_flee.",
+      "speaker": "pillager",
+      "maximumDuration": 5.762,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.762,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.105",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_105.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The target is fleeing. We are also moving, technically.ogg",
+      "pool": "villager_flee"
+    },
+    "pillager_106": {
+      "title": "Pillager 106: ambient",
+      "body": "Pillager dialogue. Event pool: ambient.",
+      "speaker": "pillager",
+      "maximumDuration": 6.704,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.704,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.106",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_106.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The village brought its own security. This feels personal.ogg",
+      "pool": "ambient"
+    },
+    "pillager_107": {
+      "title": "Pillager 107: villager hit",
+      "body": "Pillager dialogue. Event pool: villager_hit.",
+      "speaker": "pillager",
+      "maximumDuration": 6.362,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.362,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.107",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_107.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "The villager’s been hit! Now we should probably keep moving.ogg",
+      "pool": "villager_hit"
+    },
+    "pillager_108": {
+      "title": "Pillager 108: villager hit",
+      "body": "Pillager dialogue. Event pool: villager_hit.",
+      "speaker": "pillager",
+      "maximumDuration": 7.606,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 7.606,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.108",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_108.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "They said, ‘Oh no, arrows!’ I think that means we did well.ogg",
+      "pool": "villager_hit"
+    },
+    "pillager_109": {
+      "title": "Pillager 109: villager flee",
+      "body": "Pillager dialogue. Event pool: villager_flee.",
+      "speaker": "pillager",
+      "maximumDuration": 5.545,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.545,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.109",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_109.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "They’re getting away. Someone take the scenic route.ogg",
+      "pool": "villager_flee"
+    },
+    "pillager_110": {
+      "title": "Pillager 110: villager flee",
+      "body": "Pillager dialogue. Event pool: villager_flee.",
+      "speaker": "pillager",
+      "maximumDuration": 6.252,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.252,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.110",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_110.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "They’re running! That means our entrance worked.ogg",
+      "pool": "villager_flee"
+    },
+    "pillager_111": {
+      "title": "Pillager 111: ambient",
+      "body": "Pillager dialogue. Event pool: ambient.",
+      "speaker": "pillager",
+      "maximumDuration": 6.163,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 6.163,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.111",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_111.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "This uniform is not as protective as advertised.ogg",
+      "pool": "ambient"
+    },
+    "pillager_112": {
+      "title": "Pillager 112: raid",
+      "body": "Pillager dialogue. Event pool: raid.",
+      "speaker": "pillager",
+      "maximumDuration": 5.272,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.272,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.112",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_112.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Village ahead! Try to look like we know the route.ogg",
+      "pool": "raid"
+    },
+    "pillager_113": {
+      "title": "Pillager 113: player sighting",
+      "body": "Pillager dialogue. Event pool: player_sighting.",
+      "speaker": "pillager",
+      "maximumDuration": 5.819,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.819,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.113",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_113.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "What is that weird-looking villager Aah, it stinks.ogg",
+      "pool": "player_sighting"
+    },
+    "pillager_114": {
+      "title": "Pillager 114: villager flee",
+      "body": "Pillager dialogue. Event pool: villager_flee.",
+      "speaker": "pillager",
+      "maximumDuration": 4.974,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 4.974,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.114",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_114.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Why are they running Did they see the crossbows.ogg",
+      "pool": "villager_flee"
+    },
+    "pillager_115": {
+      "title": "Pillager 115: player stare",
+      "body": "Pillager dialogue. Event pool: player_stare.",
+      "speaker": "pillager",
+      "maximumDuration": 5.657,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.657,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.115",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_115.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Why are you staring at me Is my uniform crooked.ogg",
+      "pool": "player_stare"
+    },
+    "pillager_116": {
+      "title": "Pillager 116: player stare",
+      "body": "Pillager dialogue. Event pool: player_stare.",
+      "speaker": "pillager",
+      "maximumDuration": 5.633,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.633,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.116",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_116.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "You can stop staring. It doesn’t make me more official.ogg",
+      "pool": "player_stare"
+    },
+    "pillager_117": {
+      "title": "Pillager 117: pillager hurt",
+      "body": "Pillager dialogue. Event pool: pillager_hurt.",
+      "speaker": "pillager",
+      "maximumDuration": 5.731,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.731,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.117",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_117.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "You hit my armour. I felt that personally.ogg",
+      "pool": "pillager_hurt"
+    },
+    "pillager_118": {
+      "title": "Pillager 118: egg hatch",
+      "body": "Pillager dialogue. Event pool: egg_hatch.",
+      "speaker": "pillager",
+      "maximumDuration": 8.854,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 8.854,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.118",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_118.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Aaah I am alive, this weird looking villager summond me.ogg",
+      "pool": "egg_hatch"
+    },
+    "pillager_119": {
+      "title": "Pillager 119: egg hatch",
+      "body": "Pillager dialogue. Event pool: egg_hatch.",
+      "speaker": "pillager",
+      "maximumDuration": 3.152,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 3.152,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.119",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_119.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Hello cruel world.ogg",
+      "pool": "egg_hatch"
+    },
+    "pillager_120": {
+      "title": "Pillager 120: egg hatch",
+      "body": "Pillager dialogue. Event pool: egg_hatch.",
+      "speaker": "pillager",
+      "maximumDuration": 5.744,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 5.744,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.120",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_120.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "I did not know pillagers are born from eggs.ogg",
+      "pool": "egg_hatch"
+    },
+    "pillager_121": {
+      "title": "Pillager 121: egg hatch",
+      "body": "Pillager dialogue. Event pool: egg_hatch.",
+      "speaker": "pillager",
+      "maximumDuration": 3.949,
+      "variants": [
+        {
+          "index": 0,
+          "duration": 3.949,
+          "weight": 1,
+          "animation": "animation.vnap.pillager.121",
+          "subtitles": [
+            {
+              "time": 0,
+              "key": "subtitles.villager-news-addon-port.dialogue.pillager_121.0.0"
+            }
+          ]
+        }
+      ],
+      "recording": "Owh is it time to patrol already.ogg",
+      "pool": "egg_hatch"
+    }
+  }
+}

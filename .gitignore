@@ -32,6 +32,13 @@ options.txt
 .agents/
 .codex/
 Port Plan.md
+.codex-preview/
+
+# Python and local EMF diagnostics
+__pycache__/
+*.py[cod]
+*.xmp
+emf-config-original.json
 
 # Local environment and temporary files
 .env

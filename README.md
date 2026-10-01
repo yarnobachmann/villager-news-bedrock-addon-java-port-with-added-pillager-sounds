@@ -3,7 +3,7 @@
 A Fabric port of the **Villager News Add-On** for Minecraft Java Edition 26.3.
 It brings the original Villager News characters, models, animations, textures,
 voice acting, and contextual dialogue to Java Edition while retaining normal
-Minecraft villager gameplay. Current release: **1.3.6**.
+Minecraft villager gameplay. Current release: **1.4.12**.
 
 ## Community
 
@@ -17,13 +17,24 @@ for support, updates, and discussion.
 - The Mayor, Testificate Man, Villager Number 5, Villager Number 9, and
   Villager Unreachable as named characters
 - Wooly the Sheep and the Villager News wandering trader
-- 2,212 original voice clips across 523 dialogue groups
+- 121 voiced pillager lines, including patrol reactions, combat comments, and
+  spawn-egg lines
+- 2,338 voice clips across 649 dialogue groups
+- Five Vex voice lines that play from the Vex's moving position
 - 22 original short reaction effects, including synchronized villager and
   wandering-trader hurt effects
 - Context-aware dialogue for player actions, nearby mobs, weather, dimensions,
   combat, trading, work, sleep, spawning, growth, and other world events
+- Pillagers react to players, villagers, iron golems, raids, combat, and nearby
+  pillagers, with ambient comments spaced several minutes apart
 - Multi-part conversations between nearby villagers
-- Facial expressions and gestures synchronized with each voice line
+- Villager and trader facial expressions and gestures synchronized with their
+  voice lines
+- Pillager head and arm gestures synchronized with their spoken reactions
+- Nearby pillagers perform a sustained raised-arm wave for wave-related lines
+- Fresh Animations compatibility for player movement and crouch waddle, with
+  the second skin layer and Essentials cosmetics staying aligned
+- Fresh Animations compatibility for baby animals, including sheep
 - Server-controlled dialogue selection, sound playback, cooldowns, and
   villager behavior
 - Speakers look toward the player, entity, block, or villager they are talking
@@ -85,6 +96,9 @@ Special characters can also appear naturally as new distant villages are
 generated. Each character appears once at a time and becomes eligible to spawn
 again after being killed.
 
+Pillagers use 48 recorded reactions with matching subtitles. Their ambient
+comments are spaced roughly 3 to 5 minutes apart.
+
 ## Items
 
 All custom items are available in the **Villager News** creative-mode tab.
@@ -112,6 +126,10 @@ animation. Each speaker remains occupied for the real length of the clip,
 preventing unrelated lines from overlapping. Conversation partners take turns
 and continue looking at each other throughout multi-part exchanges.
 
+Pillagers comment on nearby players, villagers, iron golems, raid groups,
+combat, and other pillagers. Their head and arm gestures use the existing
+Villager News animation timelines while keeping the vanilla pillager model.
+
 ## Building from source
 
 On Windows:
@@ -130,9 +148,9 @@ The distributable jar is written to `build/libs`.
 
 To include the operator-only dialogue test command in a development build, set
 `dialogue_test_command=true` in `gradle.properties` before building. Use
-`/dialoguetest <1-523>` in game to spawn the matching speaker and subject, play
+`/dialoguetest <1-571>` in game to spawn the matching speaker and subject, play
 every variant from that dialogue group, and remove the test actors when each one ends.
-Use `/dialoguetest continuous` to run all 523 groups in order. Each group is
+Use `/dialoguetest continuous` to run all 571 groups in order. Each group is
 announced with its variant number in chat, and the next variant begins one second
 after the current voice line finishes.
 The setting defaults to `false` for release builds.

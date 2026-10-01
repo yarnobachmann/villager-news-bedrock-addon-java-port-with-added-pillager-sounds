@@ -8,10 +8,12 @@ const resources = join(root, "src", "main", "resources");
 const modAssets = join(resources, "assets", "villager-news-addon-port");
 const cem = join(resources, "assets", "minecraft", "optifine", "cem");
 const catalog = JSON.parse(readFileSync(join(modAssets, "dialogues.json"), "utf8"));
+const pillagerCatalog = JSON.parse(readFileSync(join(modAssets, "pillager_dialogues.json"), "utf8"));
 const sounds = JSON.parse(readFileSync(join(modAssets, "sounds.json"), "utf8"));
 const animations = JSON.parse(readFileSync(join(modAssets, "dialogue_animations.json"), "utf8"));
 const handbook = JSON.parse(readFileSync(join(modAssets, "handbook.json"), "utf8"));
 const behaviorSource = readFileSync(join(root, "src/main/java/com/vnap/dialogue/ContextualDialogueController.java"), "utf8");
+const pillagerBehaviorSource = readFileSync(join(root, "src/main/java/com/vnap/dialogue/PillagerDialogueController.java"), "utf8");
 const dialogueTestSource = readFileSync(join(root, "src/main/java/com/vnap/command/DialogueTestCommand.java"), "utf8");
 const buildSettingsSource = readFileSync(join(root, "src/main/java/com/vnap/config/VillagerNewsBuildSettings.java"), "utf8");
 const initializerSource = readFileSync(join(root, "src/main/java/com/vnap/VillagerNewsAddonPort.java"), "utf8");
@@ -42,6 +44,8 @@ const villagerDataSource = readFileSync(join(root, "src/main/java/com/vnap/mixin
 const mixinConfiguration = readFileSync(join(resources, "villager-news-addon-port.mixins.json"), "utf8");
 const generatorSource = readFileSync(join(root, "tools/port-addon.mjs"), "utf8");
 const villagerModelSource = readFileSync(join(cem, "villager.jem"), "utf8");
+const pillagerModel = JSON.parse(readFileSync(join(cem, "pillager.jem"), "utf8"));
+const pillagerAnimations = JSON.parse(readFileSync(join(cem, "pillager_animations.jpm"), "utf8"));
 const gradleProperties = readFileSync(join(root, "gradle.properties"), "utf8");
 const language = JSON.parse(readFileSync(join(modAssets, "lang", "en_us.json"), "utf8"));
 const handbookHeldModel = JSON.parse(readFileSync(join(modAssets, "models", "item", "handbook_held.json"), "utf8"));
@@ -56,8 +60,8 @@ function check(condition, message) {
   if (!condition) throw new Error(message);
 }
 
-const groups = Object.entries(catalog.groups);
-check(groups.length === 523, `Expected 523 dialogue groups, found ${groups.length}`);
+const groups = [...Object.entries(catalog.groups), ...Object.entries(pillagerCatalog.groups)];
+check(groups.length === 571, `Expected 571 dialogue groups, found ${groups.length}`);
 let variantCount = 0;
 let subtitleCount = 0;
 for (const [id, group] of groups) {
@@ -81,8 +85,8 @@ for (const [id, group] of groups) {
     check(existsSync(join(modAssets, "sounds", `${relative}.ogg`)), `Missing audio file for ${name}`);
   }
 }
-check(variantCount === 2212, `Expected 2212 synchronized variants, found ${variantCount}`);
-check(subtitleCount === 3741, `Expected 3741 timed subtitles, found ${subtitleCount}`);
+check(variantCount === 2260, `Expected 2260 synchronized variants, found ${variantCount}`);
+check(subtitleCount === 3789, `Expected 3789 timed subtitles, found ${subtitleCount}`);
 for (const effect of "abcdefghijklmnopqrstuv") {
   check(sounds[`effect.${effect}`]?.sounds?.[0]?.name === `villager-news-addon-port:effect/${effect}`
     && existsSync(join(modAssets, "sounds", "effect", `${effect}.ogg`)), `Missing supplemental Bedrock effect ${effect}`);
@@ -180,10 +184,28 @@ check(behaviorSource.includes("easedRotation(mob.yBodyRot")
 	&& behaviorSource.includes("distance * proportion, 0.2F, maximumStep"),
 "Dialogue participants snap into vanilla-style subject-facing rotations");
 
-const referencedGroups = groups.filter(([id, group]) => behaviorSource.includes(`"${id}"`)
+const coreGroups = groups.filter(([id]) => !id.startsWith("pillager_"));
+const referencedCoreGroups = coreGroups.filter(([id, group]) => behaviorSource.includes(`"${id}"`)
   || (group.title && behaviorSource.includes(`"${group.title}"`)));
-const unreferencedGroups = groups.filter((entry) => !referencedGroups.includes(entry));
-check(referencedGroups.length === groups.length, `Expected all 523 server-triggered dialogue groups, found ${referencedGroups.length}`);
+const unreferencedGroups = coreGroups.filter((entry) => !referencedCoreGroups.includes(entry));
+const pillagerGroups = groups.filter(([id]) => id.startsWith("pillager_"));
+check(pillagerGroups.length === 48 && pillagerBehaviorSource.includes('"pillager_" + String.format')
+  && pillagerBehaviorSource.includes('"ambient"'), "Pillager dialogue groups are missing their event and ambient triggers");
+const pillagerRoot = pillagerModel.models.find((part) => part.part === "root");
+const pillagerFace = pillagerModel.models.find((part) => part.part === "nose")?.submodels
+  ?.find((part) => part.id === "face");
+const pillagerMouthAnimation = pillagerAnimations.animations
+  .find((animation) => animation["mouth.sy"] !== undefined)?.["mouth.sy"];
+const pillagerSpeechPose = pillagerAnimations.animations
+  .find((animation) => animation["head.rx"] !== undefined && animation["body.rx"] !== undefined);
+check(pillagerRoot?.model === "pillager_animations.jpm" && pillagerFace?.submodels?.some((part) => part.id === "mouth"),
+  "Pillager does not use the integrated animated face model");
+check(pillagerMouthAnimation?.includes("vnap_speaking") && pillagerMouthAnimation.includes("vnap_mouth_open")
+  && pillagerSpeechPose?.["head.rx"]?.includes("vnap_speaking")
+  && pillagerSpeechPose["body.rx"]?.includes("vnap_speaking"),
+"Pillager mouth and speech gestures are not connected to dialogue timing");
+check(referencedCoreGroups.length === coreGroups.length,
+  `Expected all ${coreGroups.length} original server-triggered dialogue groups, found ${referencedCoreGroups.length}`);
 check(unreferencedGroups.length === 0, `Found ${unreferencedGroups.length} dialogue groups without Java triggers`);
 check(/^dialogue_test_command=(true|false)$/m.test(gradleProperties)
   && buildSource.includes('filesMatching("villager-news-addon-port-build.properties")')
@@ -846,7 +868,7 @@ console.log(JSON.stringify({
   dialogueGestures: animations.gestures.length,
   voiceFiles: readdirSync(join(modAssets, "sounds", "voice")).filter((name) => name.endsWith(".ogg")).length,
   cemModels: readdirSync(cem).filter((name) => name.endsWith(".jem")).length,
-  serverTriggeredDialogueGroups: referencedGroups.length,
+  serverTriggeredDialogueGroups: referencedCoreGroups.length + pillagerGroups.length,
   unreferencedDialogueGroups: unreferencedGroups.length,
   handbookContexts: Object.keys(handbook.contexts).length,
   handbookCategories: handbook.categories.length,

@@ -23,6 +23,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public final class DialogueCatalog {
 	private static final String CATALOG_PATH = "/assets/villager-news-addon-port/dialogues.json";
+	private static final String PILLAGER_CATALOG_PATH = "/assets/villager-news-addon-port/pillager_dialogues.json";
 	private static final Map<String, DialogueGroup> GROUPS = new LinkedHashMap<>();
 	private static final Map<String, List<DialogueGroup>> TITLES = new LinkedHashMap<>();
 
@@ -30,10 +31,19 @@ public final class DialogueCatalog {
 	}
 
 	public static void register() {
-		try (InputStream stream = DialogueCatalog.class.getResourceAsStream(CATALOG_PATH)) {
-			if (stream == null) {
-				throw new IOException("Missing " + CATALOG_PATH);
-			}
+		try {
+			int variantCount = 0;
+			variantCount += loadCatalog(CATALOG_PATH);
+			variantCount += loadCatalog(PILLAGER_CATALOG_PATH);
+			VillagerNewsAddonPort.LOGGER.info("Registered {} contextual dialogue groups with {} synchronized variants", GROUPS.size(), variantCount);
+		} catch (IOException | RuntimeException exception) {
+			throw new IllegalStateException("Could not load Villager News dialogue catalog", exception);
+		}
+	}
+
+	private static int loadCatalog(String catalogPath) throws IOException {
+		try (InputStream stream = DialogueCatalog.class.getResourceAsStream(catalogPath)) {
+			if (stream == null) throw new IOException("Missing " + catalogPath);
 			JsonObject root = JsonParser.parseReader(new InputStreamReader(stream, StandardCharsets.UTF_8)).getAsJsonObject();
 			int variantCount = 0;
 			for (Map.Entry<String, JsonElement> entry : root.getAsJsonObject("groups").entrySet()) {
@@ -46,41 +56,23 @@ public final class DialogueCatalog {
 					List<SubtitleFrame> subtitles = new ArrayList<>();
 					for (JsonElement subtitleElement : variantValue.getAsJsonArray("subtitles")) {
 						JsonObject subtitleValue = subtitleElement.getAsJsonObject();
-						subtitles.add(new SubtitleFrame(
-							subtitleValue.get("time").getAsDouble(),
-							subtitleValue.get("key").getAsString()
-						));
+						subtitles.add(new SubtitleFrame(subtitleValue.get("time").getAsDouble(), subtitleValue.get("key").getAsString()));
 					}
 					Identifier soundId = VillagerNewsAddonPort.id("dialogue." + groupId + "." + index);
-					SoundEvent sound = Registry.register(
-						BuiltInRegistries.SOUND_EVENT,
-						soundId,
-						SoundEvent.createVariableRangeEvent(soundId)
-					);
-					variants.add(new DialogueVariant(
-						index,
-						variantValue.get("duration").getAsDouble(),
-						variantValue.get("weight").getAsInt(),
-						variantValue.get("animation").getAsString(),
-						sound,
-						List.copyOf(subtitles)
-					));
+					SoundEvent sound = Registry.register(BuiltInRegistries.SOUND_EVENT, soundId,
+						SoundEvent.createVariableRangeEvent(soundId));
+					variants.add(new DialogueVariant(index, variantValue.get("duration").getAsDouble(),
+						variantValue.get("weight").getAsInt(), variantValue.get("animation").getAsString(), sound,
+						List.copyOf(subtitles)));
 					variantCount++;
 				}
-				DialogueGroup group = new DialogueGroup(
-					groupId,
-					value.get("title").getAsString(),
-					value.get("body").getAsString(),
-					value.get("speaker").getAsString(),
-					value.get("maximumDuration").getAsDouble(),
-					List.copyOf(variants)
-				);
-				GROUPS.put(groupId, group);
+				DialogueGroup group = new DialogueGroup(groupId, value.get("title").getAsString(),
+					value.get("body").getAsString(), value.get("speaker").getAsString(),
+					value.get("maximumDuration").getAsDouble(), List.copyOf(variants));
+				if (GROUPS.putIfAbsent(groupId, group) != null) throw new IOException("Duplicate dialogue group " + groupId);
 				if (!group.title().isBlank()) TITLES.computeIfAbsent(group.title(), ignored -> new ArrayList<>()).add(group);
 			}
-			VillagerNewsAddonPort.LOGGER.info("Registered {} contextual dialogue groups with {} synchronized variants", GROUPS.size(), variantCount);
-		} catch (IOException | RuntimeException exception) {
-			throw new IllegalStateException("Could not load Villager News dialogue catalog", exception);
+			return variantCount;
 		}
 	}
 

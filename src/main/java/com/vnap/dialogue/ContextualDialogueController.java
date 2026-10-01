@@ -83,9 +83,11 @@ public final class ContextualDialogueController {
 	private static final double NEARBY_SUBJECT_RANGE = 8.0;
 	private static final long SHORT_COOLDOWN = 20L * 45L;
 	private static final long LONG_COOLDOWN = 20L * 150L;
+	private static final double PILLAGER_SPEECH_RADIUS = 24.0;
 	private static final Map<String, Long> COOLDOWNS = new HashMap<>();
 	private static final Map<UUID, Long> BUSY_UNTIL = new HashMap<>();
 	private static final Map<UUID, ActiveSound> ACTIVE_SOUNDS = new HashMap<>();
+	private static final Map<ServerLevel, List<PillagerSpeechLease>> PILLAGER_SPEECH_LEASES = new HashMap<>();
 	private static final Map<UUID, PlayerObservation> PLAYER_OBSERVATIONS = new HashMap<>();
 	private static final Map<UUID, Integer> PLAYER_DEATHS = new HashMap<>();
 	private static final Map<UUID, Boolean> LAST_SLEEPING = new HashMap<>();
@@ -594,6 +596,7 @@ public final class ContextualDialogueController {
 		COOLDOWNS.clear();
 		BUSY_UNTIL.clear();
 		ACTIVE_SOUNDS.clear();
+		PILLAGER_SPEECH_LEASES.clear();
 		PLAYER_OBSERVATIONS.clear();
 		PLAYER_DEATHS.clear();
 		LAST_SLEEPING.clear();
@@ -2233,6 +2236,16 @@ public final class ContextualDialogueController {
 		return group != null && play(speaker, group, cooldownKey, cooldown, target, null);
 	}
 
+	public static boolean playPillagerDialogue(Mob speaker, String id, String cooldownKey, long cooldown, Entity target) {
+		if (!speakerType(speaker).equals("pillager")) return false;
+		return playId(speaker, id, cooldownKey, cooldown, target);
+	}
+
+	public static boolean playVexDialogue(Mob speaker, String id, String cooldownKey, long cooldown, Entity target) {
+		if (!speakerType(speaker).equals("vex")) return false;
+		return playId(speaker, id, cooldownKey, cooldown, target);
+	}
+
 	private static boolean playSharedId(LivingEntity speaker, String id, String cooldownKey, long cooldown, Entity target) {
 		DialogueCatalog.DialogueGroup group = DialogueCatalog.byId(id);
 		return group != null && play(speaker, group, cooldownKey, cooldown, target, null, true);
@@ -2264,10 +2277,15 @@ public final class ContextualDialogueController {
 				|| speaker instanceof Villager sleepingVillager && sleepingVillager.isSleeping() && !group.id().equals("asqzby")
 				|| isBusy(speaker)
 				|| !ready(cooldownKey, VillagerNewsSettings.scaleCooldown(cooldown))) return false;
+		boolean pillagerSpeaker = speakerType(speaker).equals("pillager");
+		boolean vexSpeaker = speakerType(speaker).equals("vex");
+		if (pillagerSpeaker && !pillagerSpeechAvailable(level, speaker.position())) return false;
 		List<Integer> recentVariants = SHARED_RECENT_VARIANTS.getOrDefault(group.id(), List.of());
 		DialogueCatalog.DialogueVariant variant = group.chooseVariant(VillagerNewsSettings.rareVoicelines(), Set.copyOf(recentVariants));
 		if (variant == null) return false;
 		DialogueAnimationNetwork.send(level, speaker, group.id(), variant.index(), (int) variant.durationTicks());
+		if (pillagerSpeaker) PILLAGER_SPEECH_LEASES.computeIfAbsent(level, ignored -> new ArrayList<>())
+			.add(new PillagerSpeechLease(speaker.position(), ticks + variant.durationTicks() + 20L * 3L));
 		ACTIVE_SOUNDS.put(speaker.getUUID(), new ActiveSound(group.id(), ticks + variant.durationTicks()));
 		COOLDOWNS.put(cooldownKey, ticks);
 		int maximumWeight = group.variants().stream().mapToInt(DialogueCatalog.DialogueVariant::weight).max().orElse(1);
@@ -2285,7 +2303,7 @@ public final class ContextualDialogueController {
 		markBusy(speaker, variant.durationTicks() + 10L);
 		if (speaker instanceof Mob mob) {
 			Vec3 position = target != null ? target.getEyePosition() : targetPosition;
-			boolean lockMovement = !MOBILE_DIALOGUES.contains(group.id()) && !(speaker instanceof Villager villager
+			boolean lockMovement = !pillagerSpeaker && !vexSpeaker && !MOBILE_DIALOGUES.contains(group.id()) && !(speaker instanceof Villager villager
 				&& cast(villager) == CastProfile.UNREACHABLE && group.id().equals("eltxge"));
 			SPEECH_TARGETS.put(speaker.getUUID(), new SpeechTarget(target == null ? null : target.getUUID(), position,
 				ticks + variant.durationTicks(), lockMovement));
@@ -2350,6 +2368,18 @@ public final class ContextualDialogueController {
 
 	private static boolean ready(String key, long cooldown) {
 		return ticks - COOLDOWNS.getOrDefault(key, Long.MIN_VALUE / 2) >= cooldown;
+	}
+
+	private static boolean pillagerSpeechAvailable(ServerLevel level, Vec3 position) {
+		List<PillagerSpeechLease> leases = PILLAGER_SPEECH_LEASES.get(level);
+		if (leases == null) return true;
+		leases.removeIf(lease -> lease.readyTick() <= ticks);
+		if (leases.isEmpty()) {
+			PILLAGER_SPEECH_LEASES.remove(level);
+			return true;
+		}
+		double rangeSquared = PILLAGER_SPEECH_RADIUS * PILLAGER_SPEECH_RADIUS;
+		return leases.stream().noneMatch(lease -> lease.position().distanceToSqr(position) <= rangeSquared);
 	}
 
 	private static boolean isBusy(LivingEntity entity) {
@@ -2584,6 +2614,9 @@ public final class ContextualDialogueController {
 		}
 		if (speaker instanceof WanderingTrader) return "wandering_trader";
 		if (speaker instanceof Sheep sheep && isWooly(sheep)) return "wooly";
+		String entityPath = BuiltInRegistries.ENTITY_TYPE.getKey(speaker.getType()).getPath();
+		if (entityPath.equals("pillager")) return "pillager";
+		if (entityPath.equals("vex")) return "vex";
 		return "";
 	}
 
@@ -2662,6 +2695,9 @@ public final class ContextualDialogueController {
 	}
 
 	private record ActiveSound(String groupId, long endTick) {
+	}
+
+	private record PillagerSpeechLease(Vec3 position, long readyTick) {
 	}
 
 	private static final class TradeSession {

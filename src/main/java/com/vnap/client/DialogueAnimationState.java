@@ -7,6 +7,7 @@ import com.google.gson.JsonParser;
 import com.vnap.network.DialogueAnimationPayload;
 import com.vnap.entity.VillagerNewsData;
 import net.minecraft.client.Minecraft;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.npc.villager.Villager;
@@ -29,7 +30,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public final class DialogueAnimationState {
 	private static final String DATA_PATH = "/assets/villager-news-addon-port/dialogue_animations.json";
 	private static final String[] TARGETS = {
-		"root", "waist", "body", "head", "head_inner", "arms",
+		"root", "waist", "body", "head", "head_inner", "arms", "left_arm",
 		"left_leg_root", "left_leg", "right_leg_root", "right_leg", "brow", "eye_group", "lower_face",
 		"pupil_left", "pupil_right", "eye_left", "eye_right", "nose"
 	};
@@ -134,12 +135,14 @@ public final class DialogueAnimationState {
 	static void start(DialogueAnimationPayload payload) {
 		if (payload.groupId().isEmpty()) {
 			ActiveDialogue previous = ACTIVE.get(payload.entityId());
+			if (previous != null && previous.groupId.equals("pillager_wave_only")) return;
 			if (previous == null || previous.poseSnapshot().isEmpty()) {
 				ACTIVE.remove(payload.entityId());
 				return;
 			}
 			long now = System.nanoTime();
 			ACTIVE.put(payload.entityId(), new ActiveDialogue(
+				"",
 				now,
 				now,
 				now + (long) (BLEND_SECONDS * 1_000_000_000L),
@@ -158,6 +161,7 @@ public final class DialogueAnimationState {
 		ActiveDialogue previous = ACTIVE.get(payload.entityId());
 		Map<String, Float> previousPose = previous == null ? Map.of() : previous.poseSnapshot();
 		ACTIVE.put(payload.entityId(), new ActiveDialogue(
+			payload.groupId(),
 			now,
 			now + (long) (audioSeconds * 1_000_000_000L),
 			now + (long) (totalSeconds * 1_000_000_000L),
@@ -221,7 +225,7 @@ public final class DialogueAnimationState {
 	private static float baseTransform(String trackName, float fallback, ActiveDialogue active) {
 		EMFEntity emfEntity = EMFAnimationApi.getCurrentEntity();
 		if (!(emfEntity instanceof LivingEntity entity)
-				|| !(entity instanceof Villager) && !(entity instanceof WanderingTrader)) return fallback;
+				|| !supportsNewsAnimation(entity)) return fallback;
 		UUID id = entity.getUUID();
 		float partialTick = Minecraft.getInstance().getDeltaTracker().getGameTimeDeltaPartialTick(true);
 		float age = emfEntity.emf$age() + partialTick;
@@ -260,7 +264,7 @@ public final class DialogueAnimationState {
 	private static float look(boolean pitch) {
 		EMFEntity emfEntity = EMFAnimationApi.getCurrentEntity();
 		if (!(emfEntity instanceof LivingEntity entity)
-				|| !(entity instanceof Villager) && !(entity instanceof WanderingTrader)
+				|| !supportsNewsAnimation(entity)
 				|| entity.isSleeping()) return 0.0F;
 		float partialTick = Minecraft.getInstance().getDeltaTracker().getGameTimeDeltaPartialTick(true);
 		float age = emfEntity.emf$age() + partialTick;
@@ -268,6 +272,11 @@ public final class DialogueAnimationState {
 		state.update(age, Mth.clamp(entity.getXRot(), -90.0F, 90.0F),
 			Mth.clamp(Mth.wrapDegrees(entity.getYHeadRot() - entity.yBodyRot), -90.0F, 90.0F));
 		return pitch ? state.pitch : state.yaw;
+	}
+
+	private static boolean supportsNewsAnimation(LivingEntity entity) {
+		return entity instanceof Villager || entity instanceof WanderingTrader
+			|| BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).getPath().equals("pillager");
 	}
 
 	private static float animationTick(EMFEntity entity) {
@@ -303,12 +312,22 @@ public final class DialogueAnimationState {
 
 	private record VariantTimeline(List<MouthFrame> mouth, List<GestureFrame> gestures) {
 		MouthFrame mouthAt(float time) {
-			MouthFrame selected = mouth.isEmpty() ? null : mouth.getFirst();
-			for (MouthFrame frame : mouth) {
-				if (frame.time() > time) break;
-				selected = frame;
+			if (mouth.isEmpty()) return null;
+			MouthFrame previous = mouth.getFirst();
+			if (time <= previous.time()) return previous;
+			for (int index = 1; index < mouth.size(); index++) {
+				MouthFrame next = mouth.get(index);
+				if (time <= next.time()) {
+					float span = next.time() - previous.time();
+					float weight = span <= 0.0F ? 1.0F : Mth.clamp((time - previous.time()) / span, 0.0F, 1.0F);
+					return new MouthFrame(time,
+						Mth.lerp(weight, previous.open(), next.open()),
+						Mth.lerp(weight, previous.width(), next.width()),
+						Mth.lerp(weight, previous.closed(), next.closed()));
+				}
+				previous = next;
 			}
-			return selected;
+			return previous;
 		}
 
 		float transformAt(float time, String trackName, float fallback) {
@@ -603,6 +622,7 @@ public final class DialogueAnimationState {
 	}
 
 	private static final class ActiveDialogue {
+		private final String groupId;
 		private final long startNanos;
 		private final long audioEndNanos;
 		private final long endNanos;
@@ -613,8 +633,9 @@ public final class DialogueAnimationState {
 		private int frameAgeBits = Integer.MIN_VALUE;
 		private long frameNanos;
 
-		private ActiveDialogue(long startNanos, long audioEndNanos, long endNanos, VariantTimeline timeline,
+		private ActiveDialogue(String groupId, long startNanos, long audioEndNanos, long endNanos, VariantTimeline timeline,
 				Map<String, Float> previousPose, boolean hasAudio) {
+			this.groupId = groupId;
 			this.startNanos = startNanos;
 			this.audioEndNanos = audioEndNanos;
 			this.endNanos = endNanos;
